@@ -15,7 +15,7 @@ client = commands.Bot(command_prefix="#", intents = discord.Intents.all())
 
 
 
-token = "put ur token "
+token = ""
 
 
 CHANNEL_NAMES = ['HACKEROP']
@@ -73,16 +73,16 @@ async def admin(ctx):
 @client.event
 async def on_ready():
   await client.change_presence(activity=discord.Game(name= "MADE BY HACKER "))
-  print(f''' 
+print('''bot Is Ready To Destroy A Server ! 
 
-Bot Is Ready To Destroy A Server ! 
-
-Do #help to get started !
-
-logged in as {client.user}
-
-''')
-
+╭╮╱╭╮╱╱╱╱╱╭╮╭━╮╱╱╭━━━╮╱╱╱╭━━━╮
+┃┃╱┃┃╱╱╱╱╱┃┃┃╭╯╱╱┃╭━╮┃╱╱╱┃╭━╮┃
+┃╰━╯┣━━┳━━┫╰╯╯╭━━┫╰━╯┣╮╱╭╋╯╭╯┃
+┃╭━╮┃╭╮┃╭━┫╭╮┃┃┃━┫╭╮╭┫┃╱┃┣━╯╭╯
+┃┃╱┃┃╭╮┃╰━┫┃┃╰┫┃━┫┃┃╰┫╰━╯┃┃╰━╮
+╰╯╱╰┻╯╰┻━━┻╯╰━┻━━┻╯╰━┻━╮╭┻━━━╯
+╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━╯┃
+╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━━╯''')
 
 @client.command(pass_context=True)
 async def name(ctx, *, name):
